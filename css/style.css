@@ -286,6 +286,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
     background-image: url(./aonj/Img.jpg);
+    background-image: linear-gradient( to right), rgba(235, 10, 10, 0.6),;
     background-repeat: no-repeat;
     background-position: center;
     text-transform: uppercase;
@@ -293,6 +294,7 @@ footer{
     height: 600px;
 
   }
+  
   
   .Robota {
     height: 400px;
@@ -451,6 +453,7 @@ footer{
     width: calc(33.3% - 20px);
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+    
   }
   
 
@@ -475,7 +478,7 @@ footer{
     padding: 24px;
     margin: 0 auto;
     width: auto;
-
+    
   }
   
   .glzag {
@@ -927,7 +930,8 @@ overflow-x: visible;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
+  
+
   }
 
 
@@ -946,14 +950,18 @@ overflow-x: visible;
     letter-spacing: 0.03em;
     padding: 40px;
     opacity: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    
   }
 
   .product:hover .product-akcion{
     opacity: 1;
+   
   }
   
   .product-thumb{
     position: relative;
+    overflow: hidden;
   }
   
   .product-thumb::before{
@@ -967,14 +975,17 @@ overflow-x: visible;
     opacity: 1;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 
   .product-thumb:hover::before{
     opacity: 1;
+
   }
   
   .product:hover .product-thumb::before{
     transform: translateY(0);
+    
     }
   
 
@@ -986,9 +997,55 @@ overflow-x: visible;
 
 
 
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:  rgba(0, 0, 0, 0.2);
+  ;
+}
 
 
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
 
+.modal{
+  position: absolute;
+  top: 65%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 400px;
+  width: 528px;
+  radius:4px;
+  background-color: #FFFFFF;
+
+}
+
+
+.close{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background-color:#FFFFFF;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border: none;
+  
+  
+  
+}
+
+.closehid{
+  width: 35px;
+  height: 35px;
+}
 
 
 
