@@ -378,6 +378,27 @@
           
         </ul>
       </div>
+
+      <div class="rassylka">
+        <h3 class="podrassylka">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+        <form name="signup_form" autocomplete="on" novalidate>
+          <label type="email" name="name">
+           <span class="podrassylka-mail"> E-mail </span>
+            <input clas type="email"  name="email" class="cviet" autofocus />
+          </label>
+      <button class="knopkafot">
+       <h3 class="knopkafotpod">Подписаться</h3>
+       <svg class="telegr">
+         <use href="./icons/symbol-defs.svg#icon-icon-send"></use>
+       </svg>
+      </button>
+
+      </form>
+      </div>
+
+
+
+
     </footer>
 
     
@@ -389,9 +410,70 @@
     
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>
-          
+        <p class="data">
+          Оставьте свои данные, мы вам перезвоним
         </p>
+        
+<form class="form" name="signup_form" autocomplete="on" novalidate>
+
+
+<label class="form-field">
+  <input class="form-input" type="name"  name="name" autofocus placeholder=" "/>
+  <span class="form-laber">Имя</span>
+   <span class="ico"> 
+      <svg class="icons">
+       <use href="./icons/symbol-defs.svg#icon-Vector-10-1"></use>
+       </svg>
+   </span>
+</label>
+
+<label>
+  <input class="form-input1" type="tel"  name="tel" autofocus placeholder=" "/>
+   <span class="form-inputtel"> Телефон </span> 
+   <span class="ico-1"> 
+    <svg class="icons">
+     <use href="./icons/symbol-defs.svg#icon-phone-black-18dp-1-1"></use>
+     </svg>
+ </span>
+</label>
+
+<label>
+  <input class="form-input2" type="email" name="email" />
+  <span class="form-input-poczta2">Почта</span>
+  <span class="ico-2"> 
+    <svg class="icons">
+     <use href="./icons/symbol-defs.svg#icon-email-black-18dp-1-1"></use>
+     </svg>
+ </span>
+</label>
+
+<span class="komentar" >Комментарий</span>
+
+
+<textarea class="komentar1" name="koment" id="koment" class="stroki" rows="10">
+  Введите текст
+</textarea>
+
+
+<label>
+<input class="checkbox-sogl" type="checkbox" name="sogl">
+<span class="checkbox-sogl-1">Соглашаюсь с рассылкой и принимаю <a href="Условия договора" class="uslowia">Условия договора</a></span>
+</label>
+
+
+<button class="otpr" type="submit">
+ <span class="otpr-text"> Отправить</span>
+</button>
+</form>
+
+
+
+
+
+
+
+  
+
         <button class="close" data-modal-close>
           <svg class="closehid">
             <use href="./icons/symbol-defs.svg#icon-close"></use>
@@ -399,6 +481,9 @@
         </button>
       </div>
     </div>
+
+
+
 
 
 
